@@ -51,7 +51,7 @@ else()
   endif()
 endif()
 
-check_function_exists(backtrace HAVE_BACKTRACE)
+#check_function_exists(backtrace HAVE_BACKTRACE)
 check_function_exists(iswspace HAVE_ISWSPACE) #Linux <wctype.h>
 check_function_exists(setenv HAVE_SETENV)
 check_function_exists(unsetenv HAVE_UNSETENV)

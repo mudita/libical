@@ -407,6 +407,10 @@ endif()
 
 set(MIN_GLIB "2.44")
 set(MIN_LIBXML "2.7.3")
+
+libical_option(LIBICAL_BUILD_LIBICALSS "Build libicalss." False)
+libical_option(LIBICAL_BUILD_LIBICALVCAL "Build libicalvcal" False)
+
 libical_option(ICAL_GLIB "Build libical-glib interface. Requires glib ${MIN_GLIB} and libxml ${MIN_LIBXML} development packages or higher." True)
 if(ICAL_GLIB)
   if(NOT PKG_CONFIG_FOUND)
@@ -615,7 +619,7 @@ add_subdirectory(design-data)
 add_subdirectory(scripts)
 add_subdirectory(test-data)
 add_subdirectory(src)
-add_subdirectory(examples)
+#add_subdirectory(examples)
 if(USE_BUILTIN_TZDATA)
   # use our zoneinfo if cmake is passed -DUSE_BUILTIN_TZDATA
   add_subdirectory(zoneinfo)

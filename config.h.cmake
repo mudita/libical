@@ -7,10 +7,10 @@
 #cmakedefine HAVE_BDB 1
 
 /* Define to 1 if you have the `backtrace' function. */
-#cmakedefine HAVE_BACKTRACE 1
+//#cmakedefine HAVE_BACKTRACE 1
 
 /* Define to 1 if you have the <byteswap.h> header file. */
-#cmakedefine HAVE_BYTESWAP_H 1
+//#cmakedefine HAVE_BYTESWAP_H 1
 
 /* Define to 1 if you have the <endian.h> header file. */
 #cmakedefine HAVE_ENDIAN_H 1
@@ -40,13 +40,13 @@
 #cmakedefine HAVE_STDBOOL_H 1
 
 /* Define if we have pthread. */
-#cmakedefine HAVE_PTHREAD_ATTR_GET_NP 1
-#cmakedefine HAVE_PTHREAD_GETATTR_NP 1
-#cmakedefine HAVE_PTHREAD_CREATE 1
-#cmakedefine HAVE_PTHREAD_NP_H 1
-#if defined(HAVE_PTHREAD_ATTR_GET_NP) || defined(HAVE_PTHREAD_GETATTR_NP) || defined(HAVE_PTHREAD_CREATE) || defined(HAVE_PTHREAD_NP_H)
-#define HAVE_PTHREAD 1
-#endif
+//#cmakedefine HAVE_PTHREAD_ATTR_GET_NP 1
+//#cmakedefine HAVE_PTHREAD_GETATTR_NP 1
+//#cmakedefine HAVE_PTHREAD_CREATE 1
+//#cmakedefine HAVE_PTHREAD_NP_H 1
+//#if defined(HAVE_PTHREAD_ATTR_GET_NP) || defined(HAVE_PTHREAD_GETATTR_NP) || defined(HAVE_PTHREAD_CREATE) || defined(HAVE_PTHREAD_NP_H)
+//#define HAVE_PTHREAD 1
+//#endif
 
 /* Define to 1 if you have the <pthread.h> header file. */
 #cmakedefine HAVE_PTHREAD_H 1

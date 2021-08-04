@@ -82,6 +82,11 @@
 #define bswap_64 __builtin_bswap64
 #endif
 
+#if !defined(bswap_32) && !defined(bswap_64)
+#define bswap_32 __builtin_bswap32
+#define bswap_64 __builtin_bswap64
+#endif
+
 //@cond PRIVATE
 typedef struct
 {
